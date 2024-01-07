@@ -1,0 +1,34 @@
+The given code is a minimalistic Python script for creating a basic web server that responds with "Hello, World!" to any HTTP GET request. 
+It uses the built-in http.server module in Python.
+
+Here's a breakdown of the code:
+
+1. Import Statements:
+
+from http.server import SimpleHTTPRequestHandler
+from socketserver import TCPServer
+
+These import statements bring in the necessary classes (SimpleHTTPRequestHandler and TCPServer) from the http.server and socketserver modules, respectively.
+
+2. HelloWorldHandler Class:
+
+class HelloWorldHandler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+        self.wfile.write(b'Hello, World!')
+
+This class inherits from SimpleHTTPRequestHandler and overrides the do_GET method. This method is called whenever a GET request is received. 
+It sends a 200 OK response with a simple "Hello, World!" message in the response body.
+
+3. Server Configuration and Startup:
+
+if __name__ == "__main__":
+    server_address = ('', 8000)
+    httpd = TCPServer(server_address, HelloWorldHandler)
+    print('Server running on port 8000...')
+    httpd.serve_forever()
+
+This block of code checks whether the script is being run as the main module (__name__ == "__main__") and, if true, it configures the server to
+listen on port 8000 and starts serving requests indefinitely.
