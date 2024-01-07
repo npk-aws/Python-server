@@ -1,0 +1,26 @@
+Docker must be installed on our local machine to build and run Docker containers. Docker allows us to create, deploy, and run applications in containers,
+which are lightweight and portable environments. 
+
+Follow these steps to install Docker on your local machine:
+
+For Linux:
+1. Update your package index:
+sudo apt update
+
+2. Install Docker dependencies:
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
+3. Add the Docker GPG key:
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+4. Set up the stable Docker repository:
+echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+5. Update the package index again:
+sudo apt update
+
+6. Install Docker:
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+7. Verify that Docker is installed correctly:
+sudo docker --version
