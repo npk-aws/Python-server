@@ -4,11 +4,10 @@ Creating a basic Python web server, containerizing it with Docker, and hosting i
 Step 1: Creating a Basic Python Web Server                                                          
 Create a file named app.py with the necessary content
 
-Step 2: Creating a Docker Container
+Step 2: Creating a Docker Container                                                                                 
 Create a file named Dockerfile with the necessary content
 
-Step 3: Build and Run the Docker Container Locally
-
+Step 3: Build and Run the Docker Container Locally                                                           
 Open a terminal, in the directory containing both app.py and Dockerfile, run the following commands:
 # Build the Docker image
 docker build -t python-web-server .
