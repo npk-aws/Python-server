@@ -15,7 +15,7 @@ docker build -t python-web-server .
 # Run the Docker container
 docker run -p 8000:8000 python-web-server
 
-Visit http://localhost:8000 in your web browser to see the "Hello, World!" message.
+Visit http://localhost:8000 in the web browser to see the "Hello, World!" message.
 
 Step 4: Host on Amazon EC2
 Create an EC2 instance 
