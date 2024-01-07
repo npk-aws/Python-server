@@ -4,7 +4,7 @@ which are lightweight and portable environments.
 Follow these steps to install Docker on your local machine:
 
 For Linux:
-1. Update your package index:
+1. Update the package index:
 sudo apt update
 
 2. Install Docker dependencies:
