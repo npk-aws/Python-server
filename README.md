@@ -1,7 +1,7 @@
 # Python-server
 Creating a basic Python web server, containerizing it with Docker, and hosting it on an Amazon EC2 instance.
 
-Step 1: Creating a Basic Python Web Server
+Step 1: Creating a Basic Python Web Server                                                          
 Create a file named app.py with the necessary content
 
 Step 2: Creating a Docker Container
