@@ -45,7 +45,6 @@ docker run -d -p 80:8000 python-web-server
 4. Access the Web Server:
 
 Open the web browser and enter the EC2 instance's public IP address. We should see the "Hello, World!" message.
-
-
+http://ec2_IP_address:8000
 
 
