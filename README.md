@@ -25,6 +25,7 @@ Create an EC2 instance
 Use scp (Secure Copy Protocol) to transfer files to the EC2 instance. Replace EC2_PUBLIC_IP with the EC2 instance's public IP address.
 
 scp -i path/to/your/key.pem app.py Dockerfile user@EC2_PUBLIC_IP:/path/on/ec2
+(example: ssh -i "C:\Users\hp\Downloads\Python-server-kp.pem" ubuntu@54.242.227.27:\home\user)
 
 2. Connect to EC2:
 
